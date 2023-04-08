@@ -113,7 +113,7 @@ def add_records_menu():
 
 #Add Coach Records===================================================================
 def add_coach_records():
-    adminfile = open("coach records.txt","a")
+    adminfile = open("coach-records.txt","a")
     coach_id = str(input("\nEnter the Coach ID = "))
     coach_name = str(input("Enter the coach name = "))
     date_joined = str(input("Enter the date joined (dd/mm/yyyy) = "))
@@ -145,7 +145,7 @@ def add_coach_records():
 
 #student records======================================================================================
 def student_records():
-    adminfile = open("student records.txt","r")
+    adminfile = open("student-records.txt","r")
     print("\n=== List of student records ===")
 
     for records in adminfile:
@@ -165,7 +165,7 @@ def student_records():
 
 #Coach Records========================================================================
 def coach_records():
-    adminfile = open("coach records.txt","r")
+    adminfile = open("coach-records.txt","r")
     print("\n=== List of coach records ===")
     for records in adminfile:
         records = records.strip("\n")
@@ -186,7 +186,7 @@ def coach_records():
     adminfile.close()
 #Sport Records========================================================================
 def sport_records():
-    adminfile = open("sport records.txt","r")
+    adminfile = open("sport-records.txt","r")
     print("\n=== List of sport records ===")
     for records in adminfile:
         records = records.rstrip("\n")
@@ -201,7 +201,7 @@ def sport_records():
 
 #Add Sport Records===================================================================
 def add_sport_records():
-    adminfile = open("sport records.txt","a")
+    adminfile = open("sport-records.txt","a")
     sport_code = str(input("\nEnter the sport code = "))
     sport_name = str(input("Enter the sport name = "))
     SC_code = str(input("Enter the sport center code = "))
@@ -227,7 +227,7 @@ def add_sport_records():
 
 #Add Sport Schedule==================================================================
 def add_sport_schedule():
-    adminfile = open("sport schedule.txt", "a")
+    adminfile = open("sport-schedule.txt", "a")
     sport_code = str(input("\nEnter the sport code = "))
     sport_name = str(input("Enter the sport name = "))
     SC_name = str(input("Enter the sport center name = "))
@@ -311,7 +311,7 @@ def search_specific_records():
 #Student by Student ID==================================================================
 def spec_student_id():
     data = input("\nEnter the student ID to search in file: ")
-    adminfile = open("student records.txt","r")
+    adminfile = open("student-records.txt","r")
     for line in adminfile:
         line = line.rstrip("\n")
         if(line.startswith(data)):
@@ -338,7 +338,7 @@ def spec_student_id():
 #Sport by Sport ID======================================================================
 def spec_sport_id():
     data = input("\nEnter the sport ID to search in file: ")
-    adminfile = open("sport records.txt","r")
+    adminfile = open("sport-records.txt","r")
     for line in adminfile:
         line = line.rstrip("\n")
         if(line.startswith(data)):
@@ -361,7 +361,7 @@ def spec_sport_id():
 #Coach by Coach rating===================================================================
 def spec_coach_rating():
     data = input("\nEnter the coach rating search in file (1-5): ")
-    adminfile = open("coach records.txt","r")
+    adminfile = open("coach-records.txt","r")
     for line in adminfile:
         line = line.rstrip("\n")
         if(line.endswith(data)):
@@ -391,7 +391,7 @@ def spec_coach_rating():
 #Coach by Coach ID======================================================================
 def spec_coach_id():
     data = input("\nEnter the coach ID to search in file: ")
-    adminfile = open("coach records.txt","r")
+    adminfile = open("coach-records.txt","r")
     for line in adminfile:
         line = line.rstrip("\n")
         if(line.startswith(data)):
@@ -445,7 +445,7 @@ def sort_display():
 
 #Sort coaches by hourly hours==================================================================
 def sort_payment():
-    adminfile = open("coach records.txt","r")
+    adminfile = open("coach-records.txt","r")
     print("\n=== This is the coach records (sorted by hourly pay rate) ===")
     new_records = []
     for records in adminfile:
@@ -496,7 +496,7 @@ def sort_payment():
 
 #Sort coaches by names==================================================================
 def sort_names():
-    adminfile = open("coach records.txt","r")
+    adminfile = open("coach-records.txt","r")
     print("\n=== This is the coach records (sorted by names) ===")
     new_records = []
     for records in adminfile:
@@ -547,7 +547,7 @@ def sort_names():
 
 #Sort coaches by rating==================================================================
 def sort_rating():
-    adminfile = open("coach records.txt","r")
+    adminfile = open("coach-records.txt","r")
     print("\n=== This is the coach records (sorted by rating) ===\n")
     new_records = []
     for records in adminfile:
@@ -629,7 +629,7 @@ def modify_records():
 
 #Modify Coach Records===================================================================
 def mod_coach_records():
-    adminread = open("coach records.txt", "r+")
+    adminread = open("coach-records.txt", "r+")
     adminwrite = open("temp.txt", "w+")
     line2 = []
     new = []
@@ -675,7 +675,7 @@ def mod_coach_records():
         mod_coach_records()
 
 def mod_coach_engine():
-    adminread = open("coach records.txt", "w+")
+    adminread = open("coach-records.txt", "w+")
     adminwrite = open("temp.txt", "r+")       
     for x in adminwrite.readlines():
         adminread.write(x)
@@ -686,7 +686,7 @@ def mod_coach_engine():
 
 #Modify Sport Schedule===================================================================
 def mod_sport_schedule():
-    adminread = open("sport schedule.txt", "r+")
+    adminread = open("sport-schedule.txt", "r+")
     adminwrite = open("temp.txt", "w+")
     line2 = []
     new = []
@@ -726,7 +726,7 @@ def mod_sport_schedule():
         mod_sport_schedule()
 
 def mod_schedule_engine():
-    adminread = open("sport schedule.txt", "w+")
+    adminread = open("sport-schedule.txt", "w+")
     adminwrite = open("temp.txt", "r+")       
     for x in adminwrite.readlines():
         adminread.write(x)
@@ -737,7 +737,7 @@ def mod_schedule_engine():
 
 #Modify Sport Records===================================================================
 def mod_sport_records():
-    adminread = open("sport records.txt", "r+")
+    adminread = open("sport-records.txt", "r+")
     adminwrite = open("temp.txt", "w+")
     line2 = []
     new = []
@@ -776,7 +776,7 @@ def mod_sport_records():
         mod_sport_records()
 
 def mod_sport_engine():
-    adminread = open("sport records.txt", "w+")
+    adminread = open("sport-records.txt", "w+")
     adminwrite = open("temp.txt", "r+")       
     for x in adminwrite.readlines():
         adminread.write(x)
@@ -787,7 +787,7 @@ def mod_sport_engine():
 
 #Sport Schedule ========================================================================
 def sport_schedule():
-    adminfile = open("sport schedule.txt","r")
+    adminfile = open("sport-schedule.txt","r")
     print("\n=== This is the sport schedule ===")
     for records in adminfile:
         records = records.strip("\n")
@@ -828,7 +828,7 @@ def student_menu():
         
 #Student login===========================================================================
 def student_login():
-    studentfile = open("student records.txt","r")
+    studentfile = open("student-records.txt","r")
     print("\n=== Sign-in to your account ===\n")
     UserID = str(input("Please enter your name = "))
     Pass = str(input("Please Enter your password = "))
@@ -918,7 +918,7 @@ def all_student():
     
 #Student register======================================================================
 def student_register():
-    studentfile = open("student records.txt","a")
+    studentfile = open("student-records.txt","a")
     student_id = str(input("Fill your student ID's number (the number is up to you)= Student"))
     student_name = str(input("Fill your name = "))
     password = str(input("Fill your password for your account = "))
@@ -940,7 +940,7 @@ def student_register():
 #self-records of students==================================================================================
 def self_records(username, password, sport):
     data = username
-    studentfile = open("student records.txt","r")
+    studentfile = open("student-records.txt","r")
     for line in studentfile:
         line = line.rstrip("\n")
         line = line.split(" | ")
@@ -959,7 +959,7 @@ def self_records(username, password, sport):
 
 #modify self-records of students======================================================================
 def mod_self_records(username, password, sport):
-    studentread = open("student records.txt", "r+")
+    studentread = open("student-records.txt", "r+")
     studentwrite = open("temp.txt", "w+")
     line2 = []
     new = []
@@ -1002,7 +1002,7 @@ def mod_self_records(username, password, sport):
         mod_self_records(username, password, sport)
 
 def mod_SL_engine(username, password, sport):
-    studentread = open("student records.txt", "w+")
+    studentread = open("student-records.txt", "w+")
     studentwrite = open("temp.txt", "r+")       
     for x in studentwrite.readlines():
         studentread.write(x)
@@ -1014,7 +1014,7 @@ def mod_SL_engine(username, password, sport):
 #feedback and star============================================================================================
 def feedback(username, password, sport):
     data = input("\nPick the coach by coach ID: ")
-    studentfile = open("coach records.txt","r")
+    studentfile = open("coach-records.txt","r")
     for line in studentfile:
         line = line.rstrip("\n")
         if(line.startswith(data)):
@@ -1050,7 +1050,7 @@ def feedback(username, password, sport):
 
 #Specific Sport Schedule for student ========================================================================
 def student_sport_schedule(username, password, sport):
-    studentfile = open("sport schedule.txt","r")
+    studentfile = open("sport-schedule.txt","r")
     data = sport
     print("\n=== This is your sport schedule ===")
     for records in studentfile:
@@ -1066,7 +1066,7 @@ def student_sport_schedule(username, password, sport):
 
 #Details of coach for registered student ========================================================================
 def student_coach_details(username, password, sport):
-    studentfile = open("coach records.txt","r")
+    studentfile = open("coach-records.txt","r")
     data = sport
     print("\n=== This is your coach details ===")
     for records in studentfile:

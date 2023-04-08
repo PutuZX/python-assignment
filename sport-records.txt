@@ -1,0 +1,10 @@
+100S | Swimming | SC01 | Pinang | 25
+200G | Gymnastics | SC02 | Melaka | 50
+300C | Cricket | SC03 | Kinabalu | 75
+400B | Badminton | SC01 | Pinang | 30
+500V | Volleyball | SC02 | Melaka | 40
+600T | Tennis | SC03 | Kinabalu | 50
+700F | Football | SC01 | Pinang | 15
+800B | Basketball | SC02 | Melaka | 80
+900T | Table Tennis | SC03 | Kinabalu | 30
+910A | Archery | SC01 | Pinang | 90

@@ -1,0 +1,6 @@
+100S | Swimming | Pinang | monday and friday | 09.00 AM
+200G | Gymnastics | Melaka | sunday and monday | 07.00 PM
+300C | Cricket | Kinabalu | friday and saturday | 05.00 PM
+400B | Badminton | Pinang | thursday and wednesday | 08.00 AM
+500V | Volleyball | Melaka | tuesday and wednesday | 04.00
+600T | Tennis | Kinabalu | monday and tuesday | 06.00 AM

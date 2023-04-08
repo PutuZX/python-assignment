@@ -1,0 +1,3 @@
+001 | Morinda Folia | 09/02/2020 | 09/02/2023 | 250 | 087234123456 | Lombok | SC01 | Pinang | 100S | Swimming | 2
+003 | Allan Porajow | 01/01/2021 | 01/01/2024 | 400 | 089123456123 | Manado | SC02 | Melaka | 200G | Gymnastics | 4
+002 | Alif Rafly | 03/12/2019 | 03/12/2022 | 500 | 085234678123 | Jakarta | SC03 | Kinabalu | 300C | Cricket | 5

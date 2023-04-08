@@ -1,0 +1,2 @@
+Student002 | Syahreza | reza123 | 01/02/2001 | reza@gmail.com | 087234123456 | Banten | Melaka | Volleyball
+Student003 | Adista Wisnu | adista123 | 09/03/2000 | adista@gmail.com | 087876123456 | Lombok | Pinang | Swimming
